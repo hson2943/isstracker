@@ -1,0 +1,13 @@
+.home {
+    display: flex;
+}
+
+.homeMap {
+    width : 70%;
+    height: 100%;
+}
+
+.homeInfo {
+    width : 30%;
+    height: 300px;
+}
