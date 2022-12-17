@@ -3,6 +3,8 @@ const url = 'https://api.wheretheiss.at/v1/satellites/25544';
 export const fetchData = async () => {
     const respone = await fetch(url);
     const data = await respone.json();
+
+    console.log('check', data)
     return data;
 }
 export const fetchPastLocal = async (timearr) => {

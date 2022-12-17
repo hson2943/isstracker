@@ -1,5 +1,23 @@
-.info {
-    background-color: aqua;
-    height          : 300px;
-    width           : 100%;
+
+.info_panel {
+    background-color:#102531;
+    height          : 753px;
+    width           : 600px;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace ;
+}
+.info{
+    padding: 5px;
+    margin: 5px;
+    display: block;
+    align-content: center;
+}
+.center{
+    margin: 5px;
+}
+.line{
+
+    margin-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

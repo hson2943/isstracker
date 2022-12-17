@@ -1,13 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 .home {
     display: flex;
+
 }
 
 .homeMap {
+    display: flex;
     width : 70%;
     height: 100%;
 }
 
 .homeInfo {
-    width : 30%;
-    height: 300px;
+    display: flex;
+    background-color: blue;
+    width : 52%;
+    height: 100%;
 }

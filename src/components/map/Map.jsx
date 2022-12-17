@@ -1,7 +1,7 @@
 import React from 'react'
 import { MapContainer, TileLayer, Marker, Popup, Polyline } from 'react-leaflet'
 import { PinPos } from './pinPos/PinPos';
-import { iss } from './iss';
+import { iss } from './iss/iss';
 export default function Map({ data, trace }) {
     if (!data.latitude) {
         return "No data";
@@ -9,9 +9,8 @@ export default function Map({ data, trace }) {
     const latitude = data.latitude;
     const longitude = data.longitude;
     const limeOptions = { color: 'lime' }
-    let polyline = [];
     return (
-        <MapContainer center={[0, longitude]} zoom={1.5} style={{ height: '100vh', width: '68vw' }} minZoom={1.5} maxBounds={[[-90, -Infinity], [90, Infinity]]} onClick={(e) => console.log('11')}>
+        <MapContainer center={[0, 0]} zoom={1.6} style={{ height: '100vh', width: '60vw' }} minZoom={1.5} maxBounds={[[-90, -180], [90, 180]]} >
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -20,7 +19,7 @@ export default function Map({ data, trace }) {
                     ISS <br /> {latitude}<br />{longitude}
                 </Popup>
             </TileLayer>
-            <Marker position={[latitude, longitude]} >
+            <Marker position={[latitude, longitude]} icon={iss}>
                 <Popup>
                     ISS <br /> {latitude}<br />{longitude}
                 </Popup>

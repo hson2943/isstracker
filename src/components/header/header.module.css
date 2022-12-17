@@ -1,5 +1,20 @@
 .header {
     width           : 100%;
     height          : 50px;
-    background-color: bisque;
+    background-color:  #005b93 ;
+    position        : sticky;
+    padding         : 0;
+    margin          : 0px;
+    z-index         : 999;
+    top             : 0;
+    border-color: #19313e ;
+}
+.headerTitle{
+
+    padding: 6px;
+    padding-left: 20px;
+    font-family: 'Courier New', Courier, monospace ;
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
 }
